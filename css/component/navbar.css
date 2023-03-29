@@ -1,0 +1,22 @@
+header {
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 1;
+}
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-brand {
+    padding-left: 50px;
+    padding-right: 100px;
+    font-weight: 700;
+}
+.form-control {
+    padding-right: 50px;
+}
+.nav-item {
+    padding-right: 12px;
+}
