@@ -1,0 +1,28 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: black;
+  }
+  
+  a {
+    color: #5A7FD4;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #0b4aa1;
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-primary {
+    font-family: "Raleway", sans-serif;
+  }
+  
+main {
+  z-index: -1;
+}
