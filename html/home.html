@@ -5,9 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- Icons from font awesome -->
+    <script
+      src="https://kit.fontawesome.com/5ce14b4205.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS files  -->
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/component/navbar.css" />
     <link rel="stylesheet" href="../css/homepage.css" />
+    <link rel="stylesheet" href="../css/component/footer.css" />
+
+    <!-- Bootstrap  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,66 +36,68 @@
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
+
+    <!-- AOS link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Swiper CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- material icon  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand h2" id="withUs" href="#">WithUs</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Articles</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2 h-4"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-            </form>
+     <!-- ======= Header ======= -->
+     <header  class="fixed-top d-flex align-items-center">
+        <div class="container  d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <h1 class="text">
+              <a href="index.html"><span>WithUs</span></a>
+            </h1>
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
           </div>
+  
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link active" href="./index.html">Home</a></li>
+              <li><a class="nav-link" href="#about">About Us</a></li>
+              <li><a class="nav-link" href="./articles.html">Articles</a></li>
+              <li><a class="nav-link" href="#team">Contact Us</a></li>
+              <li><a class="nav-link" href="#about">Login</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+          <form class="d-flex search-bar" role="search">
+            <input
+              class="form-control me-2 h-4"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <!-- .navbar -->
         </div>
-      </nav>
-    </header>
-    <body>
+      </header>
+      <!-- End Header -->
+    <main>
       <!-- Hero section -->
-      <section id="hero" class="d-flex align-items-center">
+      <section class="hero d-flex align-items-center">
         <div class="container">
           <div class="row gy-4">
             <div
               class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
             >
               <h1 class="pb-2">You are WithUs</h1>
-              <h6>
+              <p>
                 You are not alone, we are in this together and most importantly,
                 there is hope.
-              </h6>
+              </p>
               <div>
                 <a href="#about" class="btn-get-started scrollto"
                   >Get Started</a
@@ -98,6 +117,725 @@
       <!-- End hero section -->
 
       <!-- Quote section -->
-    </body>
+      <section class="quote d-flex justify-content-center">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 quote-item d-flex" data-aos="fade-up">
+              <div class="icon flex-shrink-0">
+                <i class="fa-regular fa-face-smile"></i>
+              </div>
+              <div>
+                <h4 class="title">Find more joy</h4>
+                <p class="description">
+                  Catch your breath, relax your mind, and feel 14% less stressed
+                  in just 10 days
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 quote-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="fa-regular fa-moon"></i>
+              </div>
+              <div>
+                <h4 class="title">Get more goodnights</h4>
+                <p class="description">
+                  Put your mind to bed, wake up refreshed, and make good days
+                  your new normal.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 quote-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="fa-regular fa-sun"></i>
+              </div>
+              <div>
+                <h4 class="title">Make every day brighter</h4>
+                <p class="description">
+                  Do it for yourself, and everyone you love. It only takes a few
+                  minutes to find some headspace.
+                </p>
+              </div>
+            </div>
+            <!-- End quote section -->
+          </div>
+        </div>
+      </section>
+
+      <!-- message section  -->
+      <section class="message section-bg">
+        <div class="message-title">
+          <h1 class="main-title">Share your message with us</h1>
+        </div>
+        <div class="slide-container swiper" data-aos="fade-up">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="message-card-container"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <div class="message-box">
+                    <div class="double-quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        data-testid="story-quote"
+                        class="css-63fkco"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M4.49 7.529a5.3 5.3 0 011.174-.131c3.128 0 5.663 2.716 5.663 6.065 0 3.35-2.535 6.066-5.663 6.066S0 16.814 0 13.463c0-.098.002-.197.007-.295H0C0 8.113 3.84 4 8.56 4v2.036c-1.531 0-2.943.558-4.07 1.493zm12.674 0c.378-.086.77-.131 1.172-.131 3.128 0 5.664 2.716 5.664 6.065 0 3.35-2.536 6.066-5.664 6.066-3.128 0-5.663-2.715-5.663-6.066 0-.098.002-.197.007-.295h-.007c0-5.055 3.84-9.168 8.56-9.168v2.036c-1.532 0-2.943.558-4.07 1.493z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="description">
+                      I now go to a place where I was previously afraid to go —
+                      inward, to myself.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="message-card-container"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <div class="message-box">
+                    <div class="double-quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        data-testid="story-quote"
+                        class="css-63fkco"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M4.49 7.529a5.3 5.3 0 011.174-.131c3.128 0 5.663 2.716 5.663 6.065 0 3.35-2.535 6.066-5.663 6.066S0 16.814 0 13.463c0-.098.002-.197.007-.295H0C0 8.113 3.84 4 8.56 4v2.036c-1.531 0-2.943.558-4.07 1.493zm12.674 0c.378-.086.77-.131 1.172-.131 3.128 0 5.664 2.716 5.664 6.065 0 3.35-2.536 6.066-5.664 6.066-3.128 0-5.663-2.715-5.663-6.066 0-.098.002-.197.007-.295h-.007c0-5.055 3.84-9.168 8.56-9.168v2.036c-1.532 0-2.943.558-4.07 1.493z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="description">
+                      I came to learn that the storyline in my head … was
+                      holding me back.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="message-card-container"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <div class="message-box">
+                    <div class="double-quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        data-testid="story-quote"
+                        class="css-63fkco"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M4.49 7.529a5.3 5.3 0 011.174-.131c3.128 0 5.663 2.716 5.663 6.065 0 3.35-2.535 6.066-5.663 6.066S0 16.814 0 13.463c0-.098.002-.197.007-.295H0C0 8.113 3.84 4 8.56 4v2.036c-1.531 0-2.943.558-4.07 1.493zm12.674 0c.378-.086.77-.131 1.172-.131 3.128 0 5.664 2.716 5.664 6.065 0 3.35-2.536 6.066-5.664 6.066-3.128 0-5.663-2.715-5.663-6.066 0-.098.002-.197.007-.295h-.007c0-5.055 3.84-9.168 8.56-9.168v2.036c-1.532 0-2.943.558-4.07 1.493z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="description">
+                      But we cannotimply sit and stare at our wound forever.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="message-card-container"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <div class="message-box">
+                    <div class="double-quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        data-testid="story-quote"
+                        class="css-63fkco"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M4.49 7.529a5.3 5.3 0 011.174-.131c3.128 0 5.663 2.716 5.663 6.065 0 3.35-2.535 6.066-5.663 6.066S0 16.814 0 13.463c0-.098.002-.197.007-.295H0C0 8.113 3.84 4 8.56 4v2.036c-1.531 0-2.943.558-4.07 1.493zm12.674 0c.378-.086.77-.131 1.172-.131 3.128 0 5.664 2.716 5.664 6.065 0 3.35-2.536 6.066-5.664 6.066-3.128 0-5.663-2.715-5.663-6.066 0-.098.002-.197.007-.295h-.007c0-5.055 3.84-9.168 8.56-9.168v2.036c-1.532 0-2.943.558-4.07 1.493z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="description">
+                      I will keep going until I love every part of myself down
+                      to my shadow on the concrete.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="message-card-container"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <div class="message-box">
+                    <div class="double-quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        data-testid="story-quote"
+                        class="css-63fkco"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M4.49 7.529a5.3 5.3 0 011.174-.131c3.128 0 5.663 2.716 5.663 6.065 0 3.35-2.535 6.066-5.663 6.066S0 16.814 0 13.463c0-.098.002-.197.007-.295H0C0 8.113 3.84 4 8.56 4v2.036c-1.531 0-2.943.558-4.07 1.493zm12.674 0c.378-.086.77-.131 1.172-.131 3.128 0 5.664 2.716 5.664 6.065 0 3.35-2.536 6.066-5.664 6.066-3.128 0-5.663-2.715-5.663-6.066 0-.098.002-.197.007-.295h-.007c0-5.055 3.84-9.168 8.56-9.168v2.036c-1.532 0-2.943.558-4.07 1.493z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="description">
+                      A happy workforce leads to a happy work environment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="message-card-container"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <div class="message-box">
+                    <div class="double-quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        data-testid="story-quote"
+                        class="css-63fkco"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M4.49 7.529a5.3 5.3 0 011.174-.131c3.128 0 5.663 2.716 5.663 6.065 0 3.35-2.535 6.066-5.663 6.066S0 16.814 0 13.463c0-.098.002-.197.007-.295H0C0 8.113 3.84 4 8.56 4v2.036c-1.531 0-2.943.558-4.07 1.493zm12.674 0c.378-.086.77-.131 1.172-.131 3.128 0 5.664 2.716 5.664 6.065 0 3.35-2.536 6.066-5.664 6.066-3.128 0-5.663-2.715-5.663-6.066 0-.098.002-.197.007-.295h-.007c0-5.055 3.84-9.168 8.56-9.168v2.036c-1.532 0-2.943.558-4.07 1.493z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="description">
+                      There is a freedom that comes with abandonment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="message-card-container"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <div class="message-box">
+                    <div class="double-quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        data-testid="story-quote"
+                        class="css-63fkco"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M4.49 7.529a5.3 5.3 0 011.174-.131c3.128 0 5.663 2.716 5.663 6.065 0 3.35-2.535 6.066-5.663 6.066S0 16.814 0 13.463c0-.098.002-.197.007-.295H0C0 8.113 3.84 4 8.56 4v2.036c-1.531 0-2.943.558-4.07 1.493zm12.674 0c.378-.086.77-.131 1.172-.131 3.128 0 5.664 2.716 5.664 6.065 0 3.35-2.536 6.066-5.664 6.066-3.128 0-5.663-2.715-5.663-6.066 0-.098.002-.197.007-.295h-.007c0-5.055 3.84-9.168 8.56-9.168v2.036c-1.532 0-2.943.558-4.07 1.493z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="description">
+                      You cannot change things by loving them harder.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button">
+            <span class="material-symbols-outlined button-prev">
+              arrow_back_ios
+            </span>
+            <span class="material-symbols-outlined button-next">
+              arrow_forward_ios
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- latest article -->
+      <section class="latest-article">
+        <div class="container" data-aos="fade-up">
+          <div class="latest-article-title">
+            <!-- <h2>Stories</h2> -->
+            <h1 class="main-title">Latest Articles</h1>
+          </div>
+
+          <div class="row">
+            <a
+              href="#"
+              class="col-md-6 flex align-items-stretch pb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div
+                class="bg-image card card-orange"
+                style="
+                  background-image: url('https://images.ctfassets.net/v3n26e09qg2r/36rq6nnT9rIKkU8QRZzgjl/a9398fde8a7b675bea9fa9e1d2cf8979/Simple_ways_to_make_meditation_a_daily_habit_Headspace.png?w=1200&h=1012&q=80&fm=webp&bg=rgb%3AF2F2F2');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Mindfulness</h5>
+                  <p class="card-text">
+                    Self-care ideas that stick, even when you're busy
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="col-md-6 col-lg-3 align-items-stretch pb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div
+                class="bg-image card card-orange"
+                style="
+                  background-image: url('https://images.ctfassets.net/v3n26e09qg2r/6PzT8Gw3NhKQnwXI3ukYJd/73a83bfa1079460d522ab304a7aeb4cb/Don-t_get_caught_in_the_self-improvement_trap_-_Headsapce.png?w=600&h=506&q=80&fm=webp&bg=rgb%3AF2F2F2');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Mindfulness</h5>
+                  <p class="card-text">
+                    Don't get caught in the self-improvement trap
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="col-md-6 col-lg-3 align-items-stretch pb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div
+                class="bg-image card card-orange"
+                style="
+                  background-image: url('https://images.ctfassets.net/v3n26e09qg2r/6kyFxBb7567ZoX98APpDMV/c26945a321f89effb5e0493bf282a439/Meditation_for_beginners.png?w=600&h=506&q=80&fm=webp&bg=rgb%3AF2F2F2');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Stress</h5>
+                  <p class="card-text">Overcoming low self-esteem</p>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="col-md-6 col-lg-3 flex align-items-stretch pb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div
+                class="bg-image card card-blue"
+                style="
+                  background-image: url('https://images.ctfassets.net/v3n26e09qg2r/1lhlsgC0PiTdMecDM9jlVu/05adc5e4a77ae58e4539302168c11cf6/Self-care_ideas_-_Headspace.png?w=600&h=506&q=80&fm=webp&bg=rgb%3AF2F2F2');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Stress</h5>
+                  <p class="card-text">
+                    How to deal with grief during the holidays
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="col-md-6 col-lg-3 align-items-stretch pb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div
+                class="bg-image card card-blue"
+                style="
+                  background-image: url('https://images.ctfassets.net/v3n26e09qg2r/6yE97WVi8AKcYoMsqPF1qc/073ac23ab501e96fbdae518fcb5deeac/Coping_with_tragedy_and_tragic_events_-_Headspace.png?w=600&h=506&q=80&fm=webp&bg=rgb%3AF2F2F2');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              >
+                <div class="card-body">
+                  <h5 class="card-title">Move</h5>
+                  <p class="card-text">Coping with tragedy and tragic events</p>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="col-md-6 align-items-stretch pb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div
+                class="bg-image card card-orange"
+                style="
+                  background-image: url('https://images.ctfassets.net/v3n26e09qg2r/3QpS4bseDKJktLuL889QhC/d6e46bb615c2a5ac2ba3115fa07a0fae/Breathing_exercises_to_reduce_stress_-_Headspace.png?w=1200&h=472&q=80&fm=webp&bg=rgb%3AF2F2F2');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              >
+                <div class="card-body">
+                  <div class="card-title">Stress</div>
+                  <p class="card-text">How to deal with climate anxiety</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a class="view-all" href="#">
+          <h3>View all articles</h3>
+        </a>
+      </section>
+
+      <!-- ======= F.A.Q Section ======= -->
+      <section class="faq section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h4>F.A.Q</h4>
+            <h1 class="main-title">Frequently Asked Questions</h1>
+          </div>
+
+          <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
+            <li>
+              <div
+                data-bs-toggle="collapse"
+                class="collapsed question"
+                href="#faq1"
+              >
+                What should I do if I’m worried about a friend or relative?
+                <i class="bi bi-chevron-down icon-show"></i
+                ><i class="bi bi-chevron-up icon-close"></i>
+              </div>
+              <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  This may depend on your relationship with them. Gently
+                  encouraging someone to seek appropriate support would be
+                  helpful to start with.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                data-bs-toggle="collapse"
+                href="#faq2"
+                class="collapsed question"
+              >
+                What are examples of mental illness stigma?
+                <i class="bi bi-chevron-down icon-show"></i
+                ><i class="bi bi-chevron-up icon-close"></i>
+              </div>
+              <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  When someone with a mental illness is called 'dangerous',
+                  'crazy' or 'incompetent' rather than unwell, it is an example
+                  of a stigma.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                data-bs-toggle="collapse"
+                href="#faq3"
+                class="collapsed question"
+              >
+                What is the biggest cause of stigma in mental health?
+                <i class="bi bi-chevron-down icon-show"></i
+                ><i class="bi bi-chevron-up icon-close"></i>
+              </div>
+              <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Stigma often comes from lack of understanding or fear.
+                  Inaccurate or misleading media representations of mental
+                  illness contribute to both those factors.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                data-bs-toggle="collapse"
+                href="#faq4"
+                class="collapsed question"
+              >
+                Can unpleasant childhood experiences or abuse result in mental
+                illness? If yes, what type of mental illnesses could be caused
+                by it?
+                <i class="bi bi-chevron-down icon-show"></i
+                ><i class="bi bi-chevron-up icon-close"></i>
+              </div>
+              <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Adverse childhood experience is a major risk factor for the
+                  development of psychological and behavioural problems not only
+                  during childhood, but also in adulthood as well. There are
+                  studies that have shown that adults who experienced child
+                  abuse do have higher rates of depression, suicidality, anxiety
+                  disorders and post-traumatic stress disorder (PTSD). They may
+                  also be more likely to develop alcohol-use disorders.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                data-bs-toggle="collapse"
+                href="#faq5"
+                class="collapsed question"
+              >
+                What should I do if I feel “burnt out” from helping someone who
+                keeps approaching me for help?
+                <i class="bi bi-chevron-down icon-show"></i
+                ><i class="bi bi-chevron-up icon-close"></i>
+              </div>
+              <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Doing things like deep breathing, taking a short break or
+                  listening to music may help you cope with the increased stress
+                  you may face. You may need to tell the person that you are not
+                  able to help them further and that they may need to seek
+                  professional help. If he or she continues to call you, it may
+                  be important to be firm and tell them that you may not always
+                  be able to pick up their calls and to set rules and boundaries
+                  for this.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                data-bs-toggle="collapse"
+                href="#faq6"
+                class="collapsed question"
+              >
+                Is there any underlying concern if I experience fear and
+                negativity without any reason/triggers?
+                <i class="bi bi-chevron-down icon-show"></i
+                ><i class="bi bi-chevron-up icon-close"></i>
+              </div>
+              <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  If you need to talk to someone about it, please approach your
+                  nearest Family Service Centre, or Non-Government Organization
+                  (NGO) for counselling. Exploring those issues with a trained
+                  counsellor can sometimes bring new perspectives and help
+                  relieve stress.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- End F.A.Q Section -->
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <!-- <div class="footer-newsletter">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <h4>Join Our Newsletter</h4>
+                <p>
+                  Tamen quem nulla quae legam multos aute sint culpa legam noster
+                  magna
+                </p>
+                <form action="" method="post">
+                  <input type="email" name="email" /><input
+                    type="submit"
+                    value="Subscribe"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>WithUs</h3>
+              <p>
+                A108 Adam Street <br />
+                New York, NY 535022<br />
+                United States <br /><br />
+                <strong>Phone:</strong> +1 5589 55488 55<br />
+                <strong>Email:</strong> info@withus.com<br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Support</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Find a therapist</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Well being</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Helplines</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>
+                Connect with us on social media for daily content and mental health tips
+                where we help those who doesn't feel like there voice is being heard.
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright-container p-4" style="padding-bottom: 30px;">
+        <div class="copyright" >
+          &copy; Copyright <strong><span>WithUs</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits "></div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- AOS link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
+    <script>
+      AOS.init();
+      window.addEventListener("load", () => {
+        AOS.init({
+          duration: 1000,
+          easing: "ease-in-out",
+          once: true,
+          mirror: false,
+        });
+      });
+    </script>
   </body>
 </html>
