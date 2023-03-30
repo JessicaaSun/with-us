@@ -2,7 +2,7 @@ body {
     font-family: "Open Sans", sans-serif;
     color: black;
   }
-  
+
   a {
     color: #5A7FD4;
     text-decoration: none;
@@ -25,4 +25,23 @@ body {
   
 main {
   z-index: -1;
+}
+
+.main-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
 }
