@@ -11,9 +11,9 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/component/navbar.css" />
-    <link rel="stylesheet" href="../css/component/footer.css" />
-    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../../css/component/navbar.css" />
+    <link rel="stylesheet" href="../../css/component/footer.css" />
+    <link rel="stylesheet" href="../../css/global.css" />
 
     <link
       rel="stylesheet"
@@ -27,8 +27,20 @@
       body {
         background-color: whitesmoke;
       }
+      main .card {
+        width: 30rem !important;
+        margin-bottom: 23px;
+      }
+      .card {
+        transform: translateY(-5px);
+        border-color: #f6991a;
+      }
       main {
         padding-bottom: 90px;
+      }
+      img {
+        height: 300px !important;
+        object-fit: cover;
       }
       h1 {
         font-weight: 700;
@@ -39,6 +51,10 @@
         justify-content: center;
         flex-wrap: wrap;
         transition: 0.5;
+      }
+      .card-title {
+        font-size: 17px;
+        font-family: "Open Sans", sans-serif;
       }
       .col1 {
         padding: 1rem;
@@ -101,15 +117,44 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./home.html"
+                <a class="nav-link" aria-current="page" href="../home.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./about-us.html">About us</a>
+                <a class="nav-link" href="../about-us.html">About us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="./article.html">Articles</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./article.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Articles
+                </a>
+                <ul class="dropdown-menu border-0 p-2">
+                  <li>
+                    <a class="dropdown-item nav-link" href="./all-article.html"
+                      >All articles</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item nav-link" href="./meditation.html"
+                      >Meditation</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item nav-link" href="./sleep.html"
+                      >Sleep</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item nav-link" href="./stress.html">Stress</a></li>
+                  <li>
+                    <a class="dropdown-item nav-link" href="#">Mindfulness</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact us</a>
@@ -135,10 +180,11 @@
     <div class="all-article-container mt-5 pt-5">
       <div class="row1 py-lg-4">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="text-center m-4">All Articles</h1>
+          <h1 class="text-center m-4">Meditation</h1>
           <p class="lead text-center">
-            Hundred of articles for any mind, any mood, any goal. Browser of all
-            article on <b> meditation, mindfulnes, sleep, and more.</b>
+            Mindfulness training isn’t limited to meditation, but it’s a great
+            place to start. Meditation is both a skill and an experience that
+            can positively impact your overall health and happiness.
           </p>
           <p class="form shadow-sm bg-white m-2 m-5">
             <input
@@ -159,33 +205,20 @@
         <div class="col1">
           <div>
             <a href="">
-              <div class="card mb-3 border-0" style="width: 25rem">
-                <img
-                  style="border-radius: 15px 15px 0px 0px"
-                  src="https://images.ctfassets.net/v3n26e09qg2r/6PzT8Gw3NhKQnwXI3ukYJd/73a83bfa1079460d522ab304a7aeb4cb/Don-t_get_caught_in_the_self-improvement_trap_-_Headsapce.png?w=600&h=506&q=80&fm=webp&bg=rgb%3AF2F2F2"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body text-center" style="border-radius: 20px">
-                  <h5 class="card-title">How to stop negative thought</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a href="">
               <div
-                class="card mb-3 border-0"
+                class="card border-0"
                 style="width: 25rem; border-radius: 15px"
               >
                 <img
                   style="border-radius: 15px 15px 0px 0px"
-                  src="https://images.ctfassets.net/v3n26e09qg2r/6PzT8Gw3NhKQnwXI3ukYJd/73a83bfa1079460d522ab304a7aeb4cb/Don-t_get_caught_in_the_self-improvement_trap_-_Headsapce.png?w=600&h=506&q=80&fm=webp&bg=rgb%3AF2F2F2"
+                  src="https://images.ctfassets.net/v3n26e09qg2r/4biWL4TtroLMNxTQIQvgbh/ea0aa1501d76a12e5ace11714da0f444/Cat_1118x638.png"
                   class="card-img-top"
                   alt="..."
                 />
-                <div class="card-body text-center" style="border-radius: 20px">
-                  <h5 class="card-title">How to stop negative thought</h5>
+                <div class="card-body text-center" style="border-radius: 15px">
+                  <h5 class="card-title">
+                    Self-care ideas that stick, even when you're busy
+                  </h5>
                 </div>
               </div>
             </a>
@@ -193,17 +226,19 @@
           <div>
             <a href="">
               <div
-                class="card mb-3 border-0"
-                style="width: 25rem; border-radius: 20px"
+                class="card border-0"
+                style="width: 25rem; border-radius: 15px"
               >
                 <img
                   style="border-radius: 15px 15px 0px 0px"
-                  src="https://images.ctfassets.net/v3n26e09qg2r/6PzT8Gw3NhKQnwXI3ukYJd/73a83bfa1079460d522ab304a7aeb4cb/Don-t_get_caught_in_the_self-improvement_trap_-_Headsapce.png?w=600&h=506&q=80&fm=webp&bg=rgb%3AF2F2F2"
+                  src="https://images.ctfassets.net/v3n26e09qg2r/2msgjhlcSlhiYGTymxspd6/a2495fda607a195e090449f8581e57ab/Cat_1118x638.png"
                   class="card-img-top"
                   alt="..."
                 />
-                <div class="card-body text-center" style="border-radius: 20px">
-                  <h5 class="card-title">How to stop negative thought</h5>
+                <div class="card-body text-center" style="border-radius: 15px">
+                  <h5 class="card-title">
+                    Don't get caught in the self-improvement trap
+                  </h5>
                 </div>
               </div>
             </a>
@@ -211,17 +246,37 @@
           <div>
             <a href="">
               <div
-                class="card mb-3 border-0"
+                class="card border-0"
                 style="width: 25rem; border-radius: 20px"
               >
                 <img
                   style="border-radius: 15px 15px 0px 0px"
-                  src="https://images.ctfassets.net/v3n26e09qg2r/6PzT8Gw3NhKQnwXI3ukYJd/73a83bfa1079460d522ab304a7aeb4cb/Don-t_get_caught_in_the_self-improvement_trap_-_Headsapce.png?w=600&h=506&q=80&fm=webp&bg=rgb%3AF2F2F2"
+                  src="https://images.ctfassets.net/v3n26e09qg2r/6S74hyY8WTcQzYHNJ5IDvL/003f06fd9e68f8fced0bcee1ae932309/Meditation_for_beginners_Headspace.png"
                   class="card-img-top"
                   alt="..."
                 />
-                <div class="card-body text-center" style="border-radius: 20px">
-                  <h5 class="card-title">How to stop negative thought</h5>
+                <div class="card-body text-center" style="border-radius: 15px">
+                  <h5 class="card-title">Overcoming low self-esteem</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <div
+                class="card border-0"
+                style="width: 25rem; border-radius: 20px"
+              >
+                <img
+                  style="border-radius: 15px 15px 0px 0px"
+                  src="https://images.ctfassets.net/v3n26e09qg2r/6YUp645MUXuVoi7yUbJAyV/eb45d6aebfd5c572574a5abff1a657fc/Meta_1200x630.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body text-center" style="border-radius: 15px">
+                  <h5 class="card-title">
+                    How to deal with grief during the holidays
+                  </h5>
                 </div>
               </div>
             </a>
@@ -231,12 +286,50 @@
           <div>
             <a href="">
               <div
-                class="card mb-3 border-0"
+                class="card border-0"
                 style="width: 25rem; border-radius: 20px"
               >
                 <img
                   style="border-radius: 15px 15px 0px 0px"
-                  src="https://images.ctfassets.net/v3n26e09qg2r/6PzT8Gw3NhKQnwXI3ukYJd/73a83bfa1079460d522ab304a7aeb4cb/Don-t_get_caught_in_the_self-improvement_trap_-_Headsapce.png?w=600&h=506&q=80&fm=webp&bg=rgb%3AF2F2F2"
+                  src="
+                  https://images.ctfassets.net/v3n26e09qg2r/6X3UP4AYFGN9E9low4imzg/08ee9ebe7f244a130443a55abfafaf1e/Cat_1118x638.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body text-center" style="border-radius: 15px">
+                  <h5 class="card-title">
+                    Coping with tragedy and tragic events
+                  </h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <div
+                class="card border-0"
+                style="width: 25rem; border-radius: 15px"
+              >
+                <img
+                  style="border-radius: 15px 15px 0px 0px; height: 337.33"
+                  src="https://images.ctfassets.net/v3n26e09qg2r/1Piqi9iJuxQrCiD7VD2bEH/2411396c161a1400ba0d6f7de47e479f/Cat_1118x638.png"
+                  alt="..."
+                />
+                <div class="card-body text-center" style="border-radius: 20px">
+                  <h5 class="card-title">How to deal with climate anxiety</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <div
+                class="card border-0"
+                style="width: 25rem; border-radius: 15px"
+              >
+                <img
+                  style="border-radius: 15px 15px 0px 0px"
+                  src="https://images.ctfassets.net/v3n26e09qg2r/7LNCfNhumndG8JBl5r7K1v/2ad91e5ca8226311c0b52b4c8341a766/Cat_1118x638.png"
                   class="card-img-top"
                   alt="..."
                 />
@@ -249,54 +342,18 @@
           <div>
             <a href="">
               <div
-                class="card mb-3 border-0"
+                class="card border-0"
                 style="width: 25rem; border-radius: 20px"
               >
                 <img
                   style="border-radius: 15px 15px 0px 0px"
-                  src="https://images.ctfassets.net/v3n26e09qg2r/6PzT8Gw3NhKQnwXI3ukYJd/73a83bfa1079460d522ab304a7aeb4cb/Don-t_get_caught_in_the_self-improvement_trap_-_Headsapce.png?w=600&h=506&q=80&fm=webp&bg=rgb%3AF2F2F2"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body text-center" style="border-radius: 20px">
-                  <h5 class="card-title">How to stop negative thought</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <div
-                class="card mb-3 border-0"
-                style="width: 25rem; border-radius: 20px"
-              >
-                <img
-                  style="border-radius: 15px 15px 0px 0px"
-                  src="https://images.ctfassets.net/v3n26e09qg2r/6PzT8Gw3NhKQnwXI3ukYJd/73a83bfa1079460d522ab304a7aeb4cb/Don-t_get_caught_in_the_self-improvement_trap_-_Headsapce.png?w=600&h=506&q=80&fm=webp&bg=rgb%3AF2F2F2"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body text-center" style="border-radius: 20px">
-                  <h5 class="card-title">How to stop negative thought</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <div
-                class="card mb-3 border-0"
-                style="width: 25rem; border-radius: 20px"
-              >
-                <img
-                  style="border-radius: 15px 15px 0px 0px"
-                  src="https://images.ctfassets.net/v3n26e09qg2r/6PzT8Gw3NhKQnwXI3ukYJd/73a83bfa1079460d522ab304a7aeb4cb/Don-t_get_caught_in_the_self-improvement_trap_-_Headsapce.png?w=600&h=506&q=80&fm=webp&bg=rgb%3AF2F2F2"
+                  src="https://images.ctfassets.net/v3n26e09qg2r/1mzE3TelyQuOJSXwFjpNcx/0fb14017b1f222249f4aba35e6c52f46/Cat_1118x638.png"
                   class="card-img-top"
                   alt="..."
                 />
                 <div class="card-body text-center" style="border-radius: 20px">
                   <h5 class="card-title text-decoration-none">
-                    How to stop negative thought
+                    How to stop negative self-talk
                   </h5>
                 </div>
               </div>
@@ -309,8 +366,6 @@
         <button class="btnshowmore">Show more</button>
       </div>
     </main>
-
-    <!-- end card main -->
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
