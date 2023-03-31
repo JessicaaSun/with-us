@@ -1,0 +1,99 @@
+.about-us {
+  padding: 100px 50px 80px 50px;
+  background-color: whitesmoke;
+}
+.about-us .container {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 992px) {
+  .about-us-img {
+    display: none;
+  }
+}
+.about-us .card {
+
+  border-radius: 15px;
+  padding: 18px 15px 18px 15px;
+  margin-bottom: 30px;
+  border: 0;
+}
+.about-us .card-text {
+  font-size: 17px;
+  padding-top: 20px;
+}
+
+/* Team section  */
+.team-section { 
+  padding: 50px 40px 60px 40px;
+}
+.team-section .card-footer {
+    background-color: #f8ac40;
+    margin-top: 20px;
+    border-radius: 0 0 15px 15px !important;
+    /* margin-bottom: 40px; */
+}
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.pt-5 {
+  padding-top: 3rem !important;
+}
+.my-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+.border-0 {
+  border: 0 !important;
+}
+.position-relative {
+  position: relative !important;
+}
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+}
+.card {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+
+}
+.team-section .card {
+    background-color: white;
+    border-radius: 15px;
+}
+.member-name {
+    font-weight: 550;
+    margin: 20px 0 30px 0;
+}
+.member-profile {
+  top: -50px;
+  left: 0;
+}
+.text-center {
+  text-align: center !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.position-absolute {
+  position: absolute !important;
+}
+
+.member-profile img {
+  width: 115px;
+  height: 115px;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+}
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
