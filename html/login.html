@@ -34,35 +34,50 @@
   </head>
   <body>
     <!-- ======= Header ======= -->
-    <header class="fixed-top d-flex align-items-center">
-      <div class="container d-flex align-items-center justify-content-between">
-        <div class="logo">
-          <h1 class="text">
-            <a href="home.html"><span>WithUs</span></a>
-          </h1>
-          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand h2" id="withUs" href="#">WithUs</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about-us.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./article.html">Articles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 h-4"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
         </div>
-
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link" href="home.html">Home</a></li>
-            <li><a class="nav-link" href="#about">About Us</a></li>
-            <li><a class="nav-link" href="./articles.html">Articles</a></li>
-            <li><a class="nav-link" href="#team">Contact Us</a></li>
-            <li><a class="nav-link active" href="login.html">Login</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <form class="d-flex search-bar" role="search">
-          <input
-            class="form-control me-2 h-4"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-        </form>
-        <!-- .navbar -->
-      </div>
+      </nav>
     </header>
 
     <!-- ======= signup Section ======= -->
@@ -92,7 +107,7 @@
                       />
                     </div>
                     <div class="mb-3 mt-lg-4">
-                      <label for="exampleInputEmail1" class="form-label fw-bold"
+                      <label for="password" class="form-label fw-bold"
                         >Password</label
                       >
                       <input
