@@ -10,10 +10,11 @@ header {
     padding-bottom: 10px;
 }
 
-.navbar-brand {
+header .navbar-brand {
     padding-left: 50px;
     padding-right: 100px;
-    font-weight: 700;
+    padding-top: 10px;
+    font-weight: 700 !important;
 }
 .form-control {
     padding-right: 50px;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WithUs-Login</title>
+    <title>WithUs-Sign-up</title>
 
     <!-- link css -->
     <link rel="stylesheet" href="../css/login.css" />
@@ -17,7 +17,9 @@
       src="https://kit.fontawesome.com/5ce14b4205.js"
       crossorigin="anonymous"
     ></script>
+
     <!-- Bootstrap  -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -111,64 +113,60 @@
 
     <!-- ======= signup Section ======= -->
     <section class="d-flex align-items-center">
-      <div class="container-fluid">
-        <div class="row">
+      <div class="container-fluid content-container">
+        <div class="row" >
           <div
-            class="col-lg-6 col-xl-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
-            style="background-color: whitesmoke"
-          >
-            <div class="ps-5 pe-5">
-              <div class="ps-5 pe-5">
-                <h1 class="pb-2 fw-bold mt-3 mt-md-5">Welcome</h1>
-                <h6>
-                  Become a member -- you'll enjoy exclusive deals, offers,
-                  invites and rewards.
-                </h6>
+            class="col-lg-6 order-2 order-lg-1 " style="background-color: whitesmoke;">
+            <div>
+              <div class="welcome-section">
+                <h1 class="pb-2 fw-bold">
+                  Welcome
+                </h1>
+                <h6 class="mb-4"> Become a member -- you'll enjoy exclusive deals, offers, invites
+                  and rewards.</h6>
                 <div>
                   <form class="mt-lg-4">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label fw-bold"
+                    <div class="mb-1">
+                      <label for="exampleInputEmail1" class="form-label form-title"
                         >Email</label
                       >
                       <input
                         type="email"
-                        class="form-control border-0 shadow-sm"
+                        class="form-control border-0 shadow-sm mt-2"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
-                        placeholder="example@mail.com"
+                        placeholder="Enter your email"
                       />
                     </div>
-                    <div class="mb-3 mt-lg-4">
-                      <label for="password" class="form-label fw-bold"
+                    <div class="mb-1 mt-4">
+                      <label for="password" class="form-label form-title"
                         >Password</label
                       >
                       <input
                         type="password"
-                        class="form-control border-0 shadow-sm "
+                        class="form-control border-0 shadow-sm mt-2"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         placeholder="Enter your password"
                       />
                     </div>
-                    <div class="mb-3 mt-lg-4">
-                      <label
-                        for="exampleInputPassword1"
-                        class="form-label fw-bold"
+                    <div class="mb-1 mt-4">
+                      <label for="exampleInputPassword1" class="form-label form-title"
                         >Date of birth</label
                       >
                       <input
                         type="date"
-                        class="form-control border-0 shadow-sm "
+                        class="form-control border-0 shadow-sm mt-2"
                         id="exampleInputPassword1"
                       />
                       <div id="emailHelp" class="form-text mt-3">
                         We want to give you a special treat on your birthday
                       </div>
                     </div>
-                    <div class="mb-2 mt-lg-4 form-check">
+                    <div class="mb-3 form-check mt-4">
                       <input
                         type="checkbox"
-                        class="form-check-input shadow-sm border-0"
+                        class="form-check-input border-1 shadow-sm"
                         id="exampleCheck1"
                       />
                       <label class="form-check-label" for="exampleCheck1"
@@ -177,15 +175,12 @@
                     </div>
                     <button
                       type="submit"
-                      class="btn btn-primary form-control border-0 mt-4 shadow-sm"
-                    >
-                      Become a member
+                      class="btn btn-primary mb-4 form-control border-0 shadow-sm mt-4 sign-in-btn">
+                      Sign up
                     </button>
                     <h6 class="mt-lg-4 text-center">
                       Already have account?
-                      <a
-                        href="login.html"
-                        class="text-primary text-decoration-none"
+                      <a href="login.html" class="text-primary text-decoration-none"
                         >Log in</a
                       >
                     </h6>
@@ -194,12 +189,13 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2">
+
+          <div class="card-image col-lg-6 order-1 order-lg-2 ">
+
             <img
               src="../assets/image/mental_health/support.png"
-              class="card-img-bottom animated"
-              alt=""
-            />
+              class="card-img-bottom animated" alt=""/>
+
           </div>
         </div>
       </div>
