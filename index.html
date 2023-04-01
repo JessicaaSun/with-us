@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WithUs-Home</title>
+    <title>Home</title>
 
     <!-- Icons from font awesome -->
     <script
@@ -56,7 +56,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm bg-white">
         <div class="container-fluid">
-          <a class="navbar-brand h2" id="withUs" href="#">WithUs</a>
+          <a class="navbar-brand h2" id="withUs" href="./index.html">WithUs</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -71,17 +71,17 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html"
+                <a class="nav-link" aria-current="page" href="../index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./about-us.html">About us</a>
+                <a class="nav-link" href="./html/about-us.html">About us</a>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="./article.html"
+                  href="./html/articles/all-article.html"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -92,50 +92,50 @@
                   <li>
                     <a
                       class="dropdown-item nav-link"
-                      href="articles/all-article.html"
+                      href="./html/articles/all-article.html"
                       >All articles</a
                     >
                   </li>
                   <li>
                     <a
                       class="dropdown-item nav-link"
-                      href="articles/all-article.html"
+                      href="./html/articles/meditation.html"
                       >Meditation</a
                     >
                   </li>
                   <li>
                     <a
                       class="dropdown-item nav-link"
-                      href="./articles/sleep.html"
+                      href="./html/articles/sleep.html"
                       >Sleep</a
                     >
                   </li>
                   <li>
                     <a
                       class="dropdown-item nav-link"
-                      href="./articles/stress.html"
+                      href="./html/articles/stress.html"
                       >Stress</a
                     >
                   </li>
                   <li>
                     <a
                       class="dropdown-item nav-link"
-                      href="./articles/all-article.html"
+                      href="./html/articles/meditation.html"
                       >Mindfulness</a
                     >
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contact-us.html">Contact us</a>
+                <a class="nav-link" href="./html/contact-us.html">Contact us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./login.html">Login</a>
+                <a class="nav-link" href="./html/login.html">Login</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2 h-4"
+                class="form-control me-2 h-4 border-0 shadow-sm"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
@@ -237,7 +237,7 @@
       <!-- message section  -->
       <section class="message section-bg">
         <div class="message-title">
-          <h1 class="main-title">Share your message with us</h1>
+          <a href="./html/contact-us.html" style="color:black"><h1 class="main-title">Share your message with us</h1></a>
         </div>
         <div class="slide-container swiper" data-aos="fade-up">
           <div class="slide-content">
@@ -792,13 +792,13 @@
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <i class="bi bi-chevron-right"></i> <a href="./index.html">Home</a>
+                  <i class="bi bi-chevron-right"></i> <a href="../index.html">Home</a>
                 </li>
                 <li>
-                  <i class="bi bi-chevron-right"></i> <a href="./about-us.html">About us</a>
+                  <i class="bi bi-chevron-right"></i> <a href="./html/about-us.html">About us</a>
                 </li>
                 <li>
-                  <i class="bi bi-chevron-right"></i> <a href="./articles/all-article.html">All articles</a>
+                  <i class="bi bi-chevron-right"></i> <a href="./html/articles/all-article.html">All articles</a>
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i> <a href="#faq">FAQ</a>
@@ -844,6 +844,7 @@
                 <a href="#" class="instagram"
                   ><i class="bi bi-instagram"></i
                 ></a>
+                
                 <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                   <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
               </div>
@@ -859,14 +860,16 @@
         </div>
         <div class="credits"></div>
       </div>
+     
     </footer>
+    <a
+    href="./index.html"
+    class="back-to-top d-flex align-items-center justify-content-center"
+    ><i class="bi bi-arrow-up-short"></i
+  ></a>
     <!-- End Footer -->
 
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+  
 
     <!-- AOS link -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Article</title>
+    <title>Sleep</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -76,12 +76,11 @@
         justify-content: center;
       }
       .btnshowmore {
-        border-radius: 15px;
-        width: 150px;
+        border-radius: 60px;
         border: white;
         color: white;
         font-weight: 500;
-        padding: 10px;
+        padding: 10px 20px 10px 20px;
         margin: 15px;
         background-color: #5a7fd4;
       }
@@ -93,7 +92,20 @@
         border-radius: 20px;
       }
       #search_radius {
-        border-radius: 15px;
+        border-radius: 10px;
+      }
+      @media screen and (max-width: 768px) {
+        .all-article-container {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        .lead {
+          font-size: 16px;
+        }
+        /* .article-category h6 {
+          margin: 15px;
+          font-size: small;
+        } */
       }
     </style>
   </head>
@@ -102,7 +114,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm bg-white">
         <div class="container-fluid">
-          <a class="navbar-brand h2" id="withUs" href="#">WithUs</a>
+           <a class="navbar-brand h2" id="withUs" href="../../index.html">WithUs</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -117,7 +129,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html"
+                <a class="nav-link" aria-current="page" href="../../index.html"
                   >Home</a
                 >
               </li>
@@ -165,7 +177,7 @@
             </ul>
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2 h-4"
+                class="form-control me-2 h-4 border-0 shadow-sm"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
@@ -187,11 +199,11 @@
             need. Learn how to create the conditions for a more restful night’s
             sleep.
           </p>
-          <p class="form shadow-sm bg-white m-2 m-5">
+          <p class="form shadow-sm bg-white mt-5">
             <input
               id="search_radius"
               type="search"
-              class="form-control border-0 p-3"
+              class="form-control border-0 p-2"
               placeholder="Search..."
               aria-label="Search"
             />
@@ -389,7 +401,7 @@
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <i class="bi bi-chevron-right"></i> <a href="../index.html">Home</a>
+                  <i class="bi bi-chevron-right"></i> <a href="../../index.html">Home</a>
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i> <a href="../about-us.html">About us</a>
@@ -456,7 +468,9 @@
         </div>
         <div class="credits"></div>
       </div>
+      
     </footer>
+    <a href="./sleep.html" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <!-- End Footer -->
 
     <script
