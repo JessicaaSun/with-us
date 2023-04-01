@@ -1,0 +1,25 @@
+.box{
+    background-color:light;
+}
+.account{
+    text-align: center;
+    margin-top: 20px;
+}
+.forget{
+    color: black;
+}
+/* .hero-img{
+    background-color: whitesmoke;
+    justify-content: center;
+    height: 70%;
+} */
+
+img{
+    height: 100vh;
+    width: 500px;
+    margin-top: 50px;
+    background-color: white;
+    justify-content: center;
+    object-fit: cover;
+    
+}
