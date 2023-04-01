@@ -2,10 +2,13 @@ body {
   font-family: "Open Sans", sans-serif;
   color: black;
 }
-
+.btn {
+  background-color: #5a7fd4 !important;
+  border-radius: 60px;
+}
 a {
   color: #5a7fd4;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -64,7 +67,6 @@ a {
 }
 
 .hero p {
-  color: #616161;
   margin: 15px 0 0 0;
   font-size: 18px;
 }
@@ -86,8 +88,7 @@ a {
 .hero .btn-get-started:hover {
   background: #0b4aa1;
 }
-
-.hero .animated {
+.animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
