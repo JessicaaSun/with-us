@@ -50,24 +50,50 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./home.html"
+                <a class="nav-link" aria-current="page" href="./home.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./about-us.html">About us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./article.html">Articles</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./article.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Articles
+                </a>
+                <ul class="dropdown-menu border-0 p-2">
+                  <li>
+                    <a
+                      class="dropdown-item nav-link"
+                      href="articles/all-article.html"
+                      >All articles</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item nav-link"
+                      href="articles/all-article.html"
+                      >Meditation</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item nav-link" href="./articles/sleep.html">Sleep</a></li>
+                  <li><a class="dropdown-item nav-link" href="./articles/stress.html">Stress</a></li>
+                  <li>
+                    <a class="dropdown-item nav-link" href="./articles/all-article.html">Mindfulness</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./login.html">Contact us</a>
+                <a class="nav-link" href="./contact-us.html">Contact us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="./login.html">Login</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -93,7 +119,7 @@
           >
             <div class="ps-5 pe-5">
               <div class="ps-5 pe-5">
-                <h1 class="pb-2 fw-bold mt-md-9 mt-lg-3 mt-xl-0">Welcome</h1>
+                <h1 class="pb-2 fw-bold mt-3 mt-md-5">Welcome</h1>
                 <h6>
                   Become a member -- you'll enjoy exclusive deals, offers,
                   invites and rewards.
