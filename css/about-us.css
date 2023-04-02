@@ -1,3 +1,7 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
 .about-us {
   padding: 100px 50px 80px 50px;
   background-color: whitesmoke;

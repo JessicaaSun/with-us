@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------
 # Quote Section
 --------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif !important;
+  color: black;
+}
 .quote .container {
   display: flex;
   justify-content: center;
