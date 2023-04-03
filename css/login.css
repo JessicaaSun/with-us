@@ -1,8 +1,8 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    color: black;
-  }
-  
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
+
 .account {
   text-align: center;
   margin-top: 20px;
@@ -25,16 +25,16 @@ body {
     display: none;
   }
   .welcome-section {
-    padding: 150px 0px 50px 0px;
+    padding: 150px 20px 50px 20px !important;
+  }
+  .content-container {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 @media screen and (max-width: 1200px) {
   .welcome-section {
     padding: 150px 80px 0 80px;
-  }
-  .content-container {
-    padding-left: 70px;
-    padding-right: 70px;
   }
 }
 
@@ -50,12 +50,12 @@ img {
   padding-right: 120px;
 }
 .form-title {
-    margin-bottom: 0 !important;
-    font-weight: 500 !important;
+  margin-bottom: 0 !important;
+  font-weight: 500 !important;
 }
 .sign-in-btn:hover {
-    background-color:  #0b4aa1 !important;
-  }
-  .si-google-btn:hover {
-    background-color: rgb(239, 238, 238) !important;
-  }
+  background-color: #0b4aa1 !important;
+}
+.si-google-btn:hover {
+  background-color: rgb(239, 238, 238) !important;
+}
