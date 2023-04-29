@@ -118,7 +118,9 @@ a {
     font-size: 28px;
     line-height: 36px;
   }
-
+  .hero {
+    padding: 0 20px 0 20px;
+  }
   .hero .btn-get-started {
     margin-bottom: 50px;
   }

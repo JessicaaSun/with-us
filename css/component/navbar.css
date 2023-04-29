@@ -8,6 +8,9 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.navbar-toggle:hover {
+  border: 0 !important;
+}
 
 header .navbar-brand {
   padding-left: 50px;
